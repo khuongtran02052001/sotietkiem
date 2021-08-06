@@ -1,0 +1,86 @@
+POST http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+{
+    "username": "admin01",
+    "password": "123456"
+
+}
+
+
+###
+
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+    "username": "khuongtran",
+    "password": "khuongtran"
+}
+
+
+###
+POST http://localhost:5000/api/passbook/passbook
+Content-Type: application/json
+
+
+{
+    "maso": "6789",
+    "loaitietkiem": "loaiA",
+    "ngaymo": "30/07/2021",
+    "tenkhachhang": "TRAN DUY KHUONG",
+    "CMND": "123456789",
+    "diachi":"p8q11",
+    "sotiendagui": 10
+}
+
+###
+POST http://localhost:5000/api/depositslip/depositslip
+Content-Type: application/json
+
+
+{
+    "ngaygui" : "01/08/2021",
+    "sotiendagui": 2,
+    "maso":"6789",
+    "tenkhachhang": "TRAN DUY KHUONG"
+}
+###
+
+POST http://localhost:5000/api/withdrawalslip/withdrawalslip
+Content-Type: application/json
+
+
+{
+    "maso": "1122",
+    "ngayrut": "31/07/2021",
+    "tenkhachhang": "TRAN DUY KHUONG",
+    "sotienrut": 2
+}   
+
+###
+
+GET http://localhost:5000/api/search/search?ketqua=1122
+
+###
+
+POST http://localhost:5000/api/search/search
+Content-Type: application/json
+
+
+{
+     "ketqua": "1122"
+}
+
+
+
+###
+
+
+POST http://localhost:5000/api/search/search
+Content-Type: application/json
+
+
+{
+     "ketqua": "1122"
+}
